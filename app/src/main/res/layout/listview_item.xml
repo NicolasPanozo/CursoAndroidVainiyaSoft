@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<util.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:id="@+id/imageViewContacto"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/person_icon"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@+id/imageViewContacto"
+        android:layout_toLeftOf="@+id/checkBox">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/view_nombre"
+            android:id="@+id/view_nombre"
+            android:singleLine="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/view_telefono"
+            android:id="@+id/view_telefono"
+            android:layout_marginTop="10dp"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/view_email"
+            android:id="@+id/view_email"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/view_direccion"
+            android:id="@+id/view_direccion"
+            android:focusable="false"/>
+    </LinearLayout>
+    <!-- no se permite que el usuario de click sobre el checkbox, la clase checkablerelativelayout
+     se encargara de esta asignacion para cada contacto de manera indeopendiente -->
+    <CheckBox android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/imageViewContacto"
+        android:clickable="false"
+        android:focusable="false"/>
+
+</util.CheckableRelativeLayout>

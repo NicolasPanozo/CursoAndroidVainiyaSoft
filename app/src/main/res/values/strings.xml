@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Contactos</string>
+    <string name="lbl_titulo">Crear contacto</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btn_agregar">Agregar contacto</string>
+    <string name="titulo_Lista">Lista de contactos</string>
+
+
+    <string name="view_nombre">Nombre</string>
+    <string name="view_telefono">Telefono</string>
+    <string name="view_email">Email</string>
+    <string name="view_direccion">Direccion</string>
+
+</resources>

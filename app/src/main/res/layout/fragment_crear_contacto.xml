@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nicolas.contactos.CrearContactoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_titulo"
+            android:id="@+id/lbl_titulo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:id="@+id/imgViewContacto"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/person_icon"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_nombre"
+            android:hint="Nombre contacto"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/txt_telefono"
+            android:hint="Telefono"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/txt_email"
+            android:hint="Correo electrónico"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_direccion"
+            android:hint="Dirección"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_agregar"
+            android:id="@+id/btn_agregar"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</ScrollView>
